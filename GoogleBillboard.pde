@@ -4,11 +4,11 @@ public void setup()
 {     
   for(int i = 2; i < e.length(); i++)
   {
-    String digits = e.substring(i, i+11);
-    double num = Double.valueOf(digits);
-    System.out.println(num);
+    String digits = e.substring(i, i+10);
+    double num = Double.parseDouble(digits);
     if(isPrime(num))
     {
+      System.out.println(num);
       break;
     }
   }
